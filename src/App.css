@@ -1,38 +1,179 @@
-.App {
+.page {
+  background-color: #fafafa;
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font-family: "Heebo", sans-serif;;
+}
+.homepage-works {
+	flex-basis: 600px;
+	
+
+}
+
+.green-text {
+  color: rgb(37, 198, 37);
+}
+
+.page-content{
+  background-color: blue;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 0 auto;
+  max-width: 90%;
+ 
+  margin-top: 60px;
+}
+.content-wrapper {
+ 
+
+
+  display: flex; /* Use flexbox to arrange children side by side */
+  justify-content: space-between;
+}
+
+
+
+.workinfo{
+
+  padding:20px;
+  box-sizing: border-box; /* Ensures padding doesn't increase width */
+  width: 65%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+}
+
+.personal-info{
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 30%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+
+}
+
+h1, h2{
+  color: 27272a;
+}
+
+.workinfo p{
+  color: #65656d;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 25px;
+
+}
+
+.personal-info p, a{
+  color: #65656d;
+  font-size: 16px;
+  line-height:10px;
+
+}
+
+.personal-info img{
+  width: 188px;
+  height: 188px;
+  border-radius: 50%;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.homepage-projects{
+ 
+}
+
+.project {
+	mix-blend-mode: normal;
+	border-radius: 20px;
+	opacity: 0.8;
+	height: 100%;
+}
+
+.project a {
+	text-decoration: none;
+}
+
+.project:hover {
+	background: #fafafa;
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.project:hover .project-link {
+	color: var(--link-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.project-container {
+	padding: 30px;
+}
+
+.project-logo {
+	width: 30px;
+}
+
+.project-logo img {
+	width: 100%;
+}
+
+.project-title {
+	font-family: var(--secondary-font);
+	color: var(--primary-color);
+	font-size: 16px;
+	padding-top: 15px;
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+
+.project-description {
+	color: var(--secondary-color);
+}
+
+.project-link {
+	display: flex;
+	align-items: center;
+	color: var(--secondary-color);
+	font-size: 12px;
+	padding-top: 20px;
+}
+
+.project-link-icon {
+	padding-left: 5px;
+	font-size: 13px;
+}
+
+.project-link-text {
+	padding-left: 20px;
+	font-weight: 700;
+}
+
+@media (max-width: 600px) {
+	.project {
+		height: 300px;
+	}
+}
+
+
+.proj-title{
+margin-left: 10px;
+}
+.outer-proj{
+margin-top: 50px;
+}
+
+.outer-head{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
